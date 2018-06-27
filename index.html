@@ -14,7 +14,37 @@
 </head>
 
 <body>
-    <script>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">CF - API's</a>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <img id ="userImage" src=""><!--Display user image here-->
+                    </li>
+                    <li class="nav-item">
+                        <div id="name"><!--Display username here--></div>
+                        <small id="mail"><!--Display user email here--></small>
+                    </li>
+                    <li class="nav-item">
+                        <div id="fb-btn" class="nav-link btn btn-primary text-white" scope="public_profile,email" onclick="fb_login();"><i class="fab fa-facebook"></i>Login</div>
+                        <a id="logout" class="nav-link btn btn-danger text-white" onclick="logout()" href="#"><i class="fab fa-facebook"></i>Logout</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script>
     window.fbAsyncInit = function() {
         FB.init({
         appId            : '345980885930256',
@@ -92,37 +122,6 @@
     }
 
     </script>
-
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">CF - API's</a>
-
-            <!-- Links -->
-            <div class="collapse navbar-collapse justify-content-end" id="nav-content">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <img id ="userImage" src=""><!--Display user image here-->
-                    </li>
-                    <li class="nav-item">
-                        <div id="name"><!--Display username here--></div>
-                        <small id="mail"><!--Display user email here--></small>
-                    </li>
-                    <li class="nav-item">
-                        <div id="fb-btn" class="nav-link btn btn-primary text-white" scope="public_profile,email" onclick="fb_login();"><i class="fab fa-facebook"></i>Login</div>
-                        <a id="logout" class="nav-link btn btn-danger text-white" onclick="logout()" href="#"><i class="fab fa-facebook"></i>Logout</a>
-                    </li>
-                </ul>
-        </nav>
-    </div>
-
-<!-- jQuery library -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </body>
 
 </html>
