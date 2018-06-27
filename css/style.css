@@ -37,3 +37,8 @@ i {
 .nav-link {
     padding: 0.7rem 1rem;
 }
+
+.navbar-brand {
+    font-weight: bold;
+    color: rgb(119, 0, 255) !important;
+}
