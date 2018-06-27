@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="maps/maps.css">  
+  </head>
+  <body>
+    <div id="apiwrap">
+    <h1>Google Api </h1>
+    <div id="logintemp">
+    <p><input id="username" type="text" placeholder="user name"></p>
+    <p><input id="password" type="text" placeholder="password"></p>
+    <p><button onclick="generateKey()">login</button></p> 
+    </div> 
+    <div id="gps">
+    <p>latitude <input type="number" placeholder="latitude" id="latitude" onchange="setLatitude()">
+    longitude <input type="number" placeholder="longitude" id="longitude" onchange="setLongitude()"></p>
+    </div>
+    <div id="map"></div>
+    </div>
+    <script src="maps/mapinit.js"></script>
+    <script src="maps/general.js"></script>      
+    
+  </body>
+</html>

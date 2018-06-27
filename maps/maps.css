@@ -1,0 +1,28 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 30vh;
+        width: 30vw;
+        border: solid black 2px;
+        margin-left: 3em;
+        display: none;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+     #logintemp{
+       padding-left: 3em;
+     }
+     h1{
+      padding-left: 3em;
+      color: blue;
+     }
+     #gps{
+     padding-left: 3em;
+     display: none;
+     }
+
+     
